@@ -1,1 +1,3 @@
-# obstacle_test_case_files
+These Python scripts generate numerical simulation data for granular avalanche–obstacle interactions. First, executing staggered_cylinders_updated.py produces a GeoTIFF file containing an optimal three-row array of cylindrical obstacles with specified heights, widths, and positions on a curved surface. Second, running generated_gdal_compressed.py clips the generated GeoTIFF and compresses its file size.
+
+Once the GeoTIFF is created, input.py is executed using the TITAN2D open-source code to simulate a granular avalanche interacting with the three-row obstacle configuration. The TITAN2D executable is built by compiling the source code according to the instructions provided in the GitHub repository (https://github.com/TITAN2D/titan2d).
